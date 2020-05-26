@@ -1,0 +1,1 @@
+*/5 * * * * $HOME/temps/collect-temp-cronjob.sh
