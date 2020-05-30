@@ -2,9 +2,8 @@
 
 TEMP_DIR=$HOME/temps
 LOG_PREFIX=temperature
-DATE_LOG=$(date +'%Y-%m-%d')
-TIME=$(date +'%H%M')
-TEMPERATURE_FILE=$LOG_PREFIX"_"$DATE_LOG"_"$TIME
+LOG_DATETIME=$(date +'%Y-%m-%d_%H%M')  
+TEMPERATURE_FILE=$LOG_PREFIX"_"$LOG_DATETIME
 
 if [ ! -d $TEMP_DIR ]; then
 	mkdir $TEMP_DIR
